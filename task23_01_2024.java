@@ -6,9 +6,10 @@ public static void main(String[] args) {
         int a=sc.nextInt();
         System.out.println("Enter the 2nd No:");
         int b=sc.nextInt();
+          sc.close();
         int c=a+b;
         System.out.println("The Sum is:"+c);
-        sc.close();
+      
     }
 }
     
