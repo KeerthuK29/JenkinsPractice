@@ -17,9 +17,10 @@ pipeline{
         stage('Run'){
             steps{
                 script{
-                   // Prompt for user input
-                    def a = input defaultValue: '10', message: 'Enter the 1st No:'
-                    def b = input defaultValue: '40', message: 'Enter the 2nd No:'
+                  def userInput = input(message: 'Enter the 1st No:', parameters: [defaultValue(defaultValue: '10', description: 'First number')])
+                    def a = userInput.toString()
+                    userInput = input(message: 'Enter the 2nd No:', parameters: [defaultValue(defaultValue: '40', description: 'Second number')])
+                    def b = userInput.toString()
                        bat 'java task23_01_2024 %a% %b%'
                 }
             }
