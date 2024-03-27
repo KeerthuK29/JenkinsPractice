@@ -13,8 +13,8 @@ pipeline{
         stage('Run'){
             steps{
                 script{ 
-                    def a = input message: 'Enter the 1st No:'
-                    def b = input message: 'Enter the 2nd No:'
+                    def a = input message: 'Enter the 1st No:', parameters: [defaultValue(defaultValue: '10', description: 'First number')]
+                    def b = input message: 'Enter the 2nd No:', parameters: [defaultValue(defaultValue: '60', description: 'Second number')]
                     
                        bat 'javac task23_01_2024.java'
                   
