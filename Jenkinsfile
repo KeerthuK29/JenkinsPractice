@@ -15,7 +15,9 @@ pipeline{
               steps{
                   script{
                       bat 'javac task23_02_2024.java'
-        
+                  }
+              }
+        }
             
         
         stage('Run'){
