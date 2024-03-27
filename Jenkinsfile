@@ -15,7 +15,7 @@ pipeline{
                 script{ 
                     def a = input message: 'Enter the 1st No:'
                     def b = input message: 'Enter the 2nd No:'
-                     bat 'set PATH=%PATH%;C:\Program Files\Java\jdk-17\bin'
+                    
                        bat 'javac task23_01_2024.java'
                   
                        bat 'java task23_01_2024 %a% %b%'
