@@ -11,7 +11,7 @@ pipeline{
                 git branch: 'main', url: 'https://github.com/KeerthuK29/JenkinsPractice.git/'
             }
         }
-        stage('Build){
+        stage('Build'){
               steps{
                   script{
                       bat 'javac task23_02_2024.java'
