@@ -8,8 +8,6 @@ pipeline{
             }
         }
         
-                  bat 'javac task23_01_2024.java'
-                
             
         
         stage('Run'){
