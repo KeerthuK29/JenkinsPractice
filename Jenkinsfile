@@ -17,10 +17,14 @@ pipeline{
         stage('Run'){
             steps{
                 script{
-                    int a = input defaultValue: '10', message: 'Enter the 1st No:'
-                    int b = input defaultValue: '30', message: 'Enter the 2nd No:'
+                    @echo off
 
-                    bat 'java task23_01_2024 $a $b'
+                         echo Enter the 1st No:
+                        set /p a=10
+
+                        echo Enter the 2nd No:
+                        set /p b=20
+                       bat 'java task23_01_2024 %a %b'
                 }
             }
         }
