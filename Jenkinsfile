@@ -4,7 +4,7 @@ pipeline{
         stage('Checkout') {
             steps {
                 
-                git branch: 'main', url: 'https://github.com/KeerthuK29/MyNewRepo.git/'
+                git branch: 'main', url: 'https://github.com/KeerthuK29/JenkinsPractice.git/'
             }
         }
         stage('Build'){
