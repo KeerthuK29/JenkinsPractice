@@ -22,12 +22,10 @@ pipeline{
         
         stage('Run'){
             steps{
-                script{ 
+                script{
+                       bat 'java task23_01_2024 %a% %b%'
                     def a = params.firstNumber
                     def b = params.secondNumber
-                       
-                  
-                       bat 'java task23_01_2024 %a% %b%'
                 }
             }
         }
